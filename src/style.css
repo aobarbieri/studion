@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    --color-primary: #4596ff;
+    --default-padding: 1rem;
+}
+
+body {
+    margin: 0;
+    padding-top: 7.75rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0; 
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 7.75rem;
+    padding: 0 2rem;
+    background-color: #070707;
+    color: #fff;
+}
+
+.navbar__links {
+    justify-self: end;
+}
+
+.navbar__links li {
+    text-transform: uppercase;
+    font-size:0.875rem; /*queremos 14px, dividimos por 16 (the root) */
+    margin-right: 3rem; /*o valor que voce quer dividido por 16, que o valor do root */
+    /* queremos 48 px, dividimos isso por 16 */
+}
+
+.navbar__links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navbar__links a:hover {
+    color: var(--color-primary);
+}
+
+.logo-studion {
+    font-weight: 900;
+    font-size: 2.375rem;
+    line-height: .8ch; /* relativo ao tamanho da altura do caractere 0 da fonte */
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.logo-studion__subtitle {
+    font-weight: 300;
+    font-size: .875rem;
+}
+
+.copy--primary {
+    color: var(--color-primary);
+}
+
+#slider {
+    background-color: #070707;
+    color: #fff;
+}
+
+.slide {
+    height: calc(100vh - 7.75rem); /* 7.75 from the navigation bar */
+    position: relative;
+}
+
+.slide__background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /*before - cover */
+    object-position: right; /*before - center */
+}
+
+.slide__copy {
+    position: absolute;
+    top: 3.25rem;
+    left: 50vw;
+    left: 15%;
+}
+
+.slide__copy h6 {
+    font-size: .9375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+}
+
+.slide__copy h2 {
+    font-size: 6.25rem;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+}
+
+.slide__copy h2 span {
+    display: block;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border: .125rem solid #fff;
+    border-radius: 2rem;
+    background: unset;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: .9375rem;
+    font-weight: 700;
+    transition: 0.5s all ease;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
+}
