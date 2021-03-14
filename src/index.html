@@ -11,6 +11,7 @@
 
 <body>
     <nav class="navbar">
+    <div class="container navbar__container">
         <h1 class="logo-studion">
             Studi<span class="copy--primary">on</span>
             <span class="logo-studion__subtitle">Events</span>
@@ -23,11 +24,12 @@
             <li><a href="" target="_blank">Contacts</a></li>
         </ul>
     
+    </div>
     </nav>
     <header>
-        <div id="slider">
+        <div id="slider" class="container">
             <div class="slide">
-                <img class="slide__background-image" src="./images/banner.jpg" alt="Studion Banner">
+                <img class="slide__background-image" src="./images/banner2.jpg" alt="Studion Banner">
                 <div class="slide__copy">
                     <h6><span class="copy--primary">Next event</span> - September 25 at 7pm</h6>
                     <h2><span class="copy--primary">Creative</span> Minds</h2>
@@ -37,30 +39,34 @@
         </div>
     </header>
     <main id="events">
-        <section>
-            <ul>
+        <section id="counter">
+            <ul class="container counter__container">
                 <li>
-                    <h3>500+</h3> performed events
+                    <h3>500+
+                        <small>performed events</small>
+                    </h3> 
                 </li>
                 <li>
-                    <h3>1.000.000+</h3> tickets sold
+                    <h3>1.000.000+
+                        <small>tickets sold</small>
+                    </h3>
                 </li>
                 <li>
-                    <h3>300+</h3> participating companies
+                    <h3>300+
+                        <small>participating companies</small>
+                    </h3> 
                 </li>
             </ul>
         </section>
-        <section>
-            <div>
-                <img src="./images/institutional.jpg" alt="woman with her body painted"/>
+
+        <section class="container institutional">
+            <img class="institutional__image" src="./images/woman.jpg" alt="woman with her face painted"/>
+            <div class="institutional__copy">
                 <h6>We will make your event happen</h6>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi natus quibusdam id sequi et
-                    explicabo ea eligendi quas consequuntur incidunt, iste distinctio, beatae voluptatibus totam
-                    placeat, illo sapiente! Pariatur, laborum!</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aperiam qui aut vel impedit quidem
-                    maiores inventore, rerum quo fuga dolorem explicabo sed autem, ducimus doloremque accusamus eos
-                    saepe. Impedit.</p>
-                <button>More</button>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aperiam qui aut vel impedit quidem
+                    maiores inventore.</p>
+                <button class="btn btn--institutional">More</button>
             </div>
         </section>
         <section>
