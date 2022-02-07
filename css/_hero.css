@@ -42,6 +42,14 @@
 
 }
 
+/* only in Gallery */
+.hero__copy span {
+    color         : var(--color-primary);
+    text-transform: uppercase;
+    font-weight   : 600;
+    font-size     : .9375rem;
+}
+
 @media screen and (min-width: 720px) {
     .hero__copy {
         padding: 13rem 1.875rem;

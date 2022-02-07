@@ -1,0 +1,35 @@
+.gallery {
+    background-color: #000;
+}
+
+.gallery__container {
+    padding        : 3rem 0;
+    display        : flex;
+    flex-wrap      : wrap;
+    align-items    : center;
+    justify-content: center;
+}
+
+.card {
+    margin  : 0 auto;
+    width   : min-content;
+    overflow: hidden;
+}
+
+.gallery--image {
+    max-width : 350px;
+    max-height: 300px;
+    margin    : 10px;
+    transition: all 1s;
+    object-fit: cover;
+}
+
+.gallery--image:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 720px) {
+    .gallery__container {
+        padding: 6rem 0;
+    }
+}
